@@ -1,0 +1,26 @@
+{
+  "name": "zerokyc/zerokyc-opencart2",
+  "description": "Official ZeroKYC Pay cryptocurrency payment gateway for OpenCart 2.3 (compatible with Simple Checkout).",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "ZeroKYC\\": "upload/system/library/zerokyc/vendor/zerokyc/zkp-sdk-php/src/",
+      "ZeroKyc\\OpenCart\\": "upload/system/library/zerokyc/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ZeroKyc\\OpenCart\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}
